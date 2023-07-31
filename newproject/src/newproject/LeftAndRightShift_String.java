@@ -18,20 +18,23 @@ public class LeftAndRightShift_String {
 	}
 
 	private static String RightRotation(String s, int n) {
+		// ksGeeksforGee
 		String end = "", start = "";
 		for (int i = 0; i < s.length(); i++) {
 			if (i > s.length() - n - 1) {
+
 				start = start + s.charAt(i);
 			} else {
 				end = end + s.charAt(i);
 			}
 		}
+		// System.out.println("ams :"+ans);
 		return start + end;
 
 	}
 
 	private static String LeftRotation(String s, int n) {
-		String end = "", start = "";
+		String end = "", start = "";// eksforGeeksGe
 		for (int i = 0; i < s.length(); i++) {
 			if (i < n) {
 				end = end + s.charAt(i);
