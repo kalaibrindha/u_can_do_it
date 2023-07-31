@@ -8,7 +8,12 @@ public class Equilibrium_Index_OFan_Array {
 		// int a[] = { 1, 2, 3 };
 		int a[] = { 1, 1, 1, 1, 4 };
 		method1(a);
+		method2(a);
 
+	}
+
+	private static void method2(int[] a) {
+		
 	}
 
 	private static void method1(int[] a) {
