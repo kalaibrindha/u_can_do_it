@@ -4,9 +4,10 @@ public class RecursivelyAddDigits {
 
 	public static void main(String[] args) {
 
-		int num = 89;
+		int num = 9815;
 		int ans2 = using_recursion(num);
-		System.out.println(ans2);
+		System.out.println("method 2  "+ans2);
+		method3(num);
 
 		int sum = 0;
 		while (num > 0) {
@@ -20,8 +21,14 @@ public class RecursivelyAddDigits {
 				sum = 0;
 			}
 		}
-		System.out.println("ans :" + sum);
+		System.out.println("ans  method 1:" + sum);
 
+	}
+
+	private static void method3(int num) {
+		int ans=num%9;
+		System.out.println("ans  method 3 :" + ans);
+		
 	}
 
 	private static int using_recursion(int num) {
